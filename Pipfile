@@ -8,6 +8,7 @@ pandas = "*"
 seaborn = "*"
 python-dotenv = "*"
 awswrangler = "*"
+scipy = "*"
 
 [dev-packages]
 black = "*"
