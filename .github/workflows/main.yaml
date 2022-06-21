@@ -18,7 +18,8 @@ jobs:
         cache: 'pipenv'
     - name: Install packages
       run: pipenv install
-    - name: 
+    - name: Run Notebook
+      run: pipenv run jupyter nbconvert --execute --clear-output *.ipynb
     - name: Deploy
       uses: crazy-max/ghaction-github-pages@v2.5.0
       with:
