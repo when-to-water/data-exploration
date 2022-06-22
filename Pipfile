@@ -4,14 +4,20 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+ipykernel = "*"
+notebook = "*"
 pandas = "*"
-seaborn = "*"
 python-dotenv = "*"
 awswrangler = "*"
+scipy = "*"
+statsmodels = "*"
+plotly-express = "*"
 
 [dev-packages]
-black = "*"
-ipykernel = "*"
+black = {extras = ["jupyter"], version = "*"}
+mypy = "*"
+bandit = "*"
+flake8 = "*"
 
 [requires]
 python_version = "3.10"
